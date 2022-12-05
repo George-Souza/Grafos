@@ -1,5 +1,5 @@
-all:	djisktra.cpp
-		@g++ djisktra.cpp -o djisktra
+all:	djikstra
+	@./djikstra < grafo_exemplo.txt
 
-ex:		djisktra
-		@./djisktra < grafo_exemplo.txt
+djikstra: djisktra.cpp
+	@g++ djisktra.cpp -o djikstra
